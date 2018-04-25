@@ -5,6 +5,12 @@
   padding: 50px;
 }
 
+.App-logo {
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+
 .Business-card {
   height: fit-content;
   text-align: center;
@@ -14,4 +20,8 @@
   padding: 30px;
   border: 1px solid #eee;
   box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.Logo-container{
+  text-align: right;
 }
