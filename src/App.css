@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
@@ -8,18 +8,27 @@ body {
 }
 
 h1 {
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   text-align: left;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 500;
   margin: 5px 0;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+h3 {
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .App {
@@ -35,15 +44,32 @@ h2 {
   display: inline-block;
 }
 
+.Basic-info {
+  display: block;
+  margin-top: 40px;
+}
+
 .Business-card {
   height: fit-content;
   text-align: center;
-  width: 35%;
+  width: 385px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px;
+  padding: 20px 30px;
   border: 1px solid #eee;
   box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.Contact-icon {
+  vertical-align: bottom;
+  margin-right: 5px;
+  height: 10px;
+  width: 10px;
+}
+
+.Contact-info {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .Logo-container{
