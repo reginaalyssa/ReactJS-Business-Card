@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Name from './components/Name';
+import WorkInfo from './components/WorkInfo';
 import Logo from './components/Logo';
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
 
 const user = {
   firstName: 'Regina Alyssa',
@@ -19,6 +25,10 @@ class App extends Component {
         <div className="Business-card">
           <div className="Logo-container">
             <Logo logo={logo}/>
+          </div>
+          <div className="Basic-info">
+            <Name name={formatName(user)}/>
+            <WorkInfo position={user.position}/>
           </div>
         </div>
       </div>
