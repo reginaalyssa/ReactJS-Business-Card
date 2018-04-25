@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import emailLogo from './assets/gmail.png';
+import mobileLogo from './assets/phone-call.png';
+import githubLogo from './assets/github.png';
 import './App.css';
+import ContactInfo from './components/ContactInfo';
+import Logo from './components/Logo';
 import Name from './components/Name';
 import WorkInfo from './components/WorkInfo';
-import Logo from './components/Logo';
 
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
@@ -29,6 +33,11 @@ class App extends Component {
           <div className="Basic-info">
             <Name name={formatName(user)}/>
             <WorkInfo position={user.position}/>
+            <div className="Contact-info">
+              <ContactInfo logo={emailLogo} value={user.email} type="E-mail" />
+              <ContactInfo logo={githubLogo} value={user.github} type="GitHub" />
+              <ContactInfo logo={mobileLogo} value={user.mobile} type="Mobile" />
+            </div>
           </div>
         </div>
       </div>
