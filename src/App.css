@@ -57,8 +57,18 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  border: 1px solid #eee;
+  background-color: #ffffff;
   box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.Night-mode {
+  background-color: #666666;
+}
+
+.Night-mode .Business-card {
+  background-color: #666666;
+  color: #ffffff;
+  box-shadow: 0 0 11px rgba(255,255,255,.2);
 }
 
 .Contact-icon {
