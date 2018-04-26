@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './../logo.svg';
+import logo from './../assets/logo.png';
 import emailLogo from './../assets/email.png';
 import mobileLogo from './../assets/phone-call.png';
 import githubLogo from './../assets/github.png';
