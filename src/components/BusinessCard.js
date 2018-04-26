@@ -42,4 +42,4 @@ class BusinessCard extends Component {
   }
 }
 
-export default BusinessCard
+export default BusinessCard;
