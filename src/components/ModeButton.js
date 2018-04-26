@@ -2,30 +2,21 @@ import React, {Component} from 'react';
 
 class ModeButton extends Component {
   constructor(props) {
-      super(props)
-      this.state = {
-          isNightMode: false,
-          mode: "Night Mode"
-      }
+      super(props);
+      this.state = { 
+        isNightMode: false 
+      };
   }
 
   changeMode = () => {
-    if(this.state.isNightMode === false) {
-      this.setState({
-        isNightMode: true,
-        mode: "Day Mode"
-      })
-    } else {
-      this.setState({
-        isNightMode: false,
-        mode: "Night Mode"
-      })
-    }
+    this.setState((prevState) => {
+      return {isNightMode: !prevState.isNightMode};
+    });
   }
 
   render() {
     return(
-      <button onClick={this.changeMode}>{this.state.mode}</button>
+      <button onClick={this.changeMode}>{this.state.isNightMode === true ? "Day Mode" : "Night Mode"}</button>
     )
   }
 }
