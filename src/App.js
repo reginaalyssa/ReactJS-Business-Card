@@ -19,8 +19,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <BusinessCard className={this.state.isNightMode ? "Night-mode" : ""} />
+      <div className={"App " + (this.state.isNightMode ? "Night-mode" : "")}>
+        <BusinessCard />
         <ModeButton changeMode={this.changeMode} isNightMode={this.state.isNightMode}/>
       </div>
     );
