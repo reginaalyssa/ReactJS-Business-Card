@@ -32,10 +32,10 @@ h3 {
 }
 
 .App {
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .App-logo {
