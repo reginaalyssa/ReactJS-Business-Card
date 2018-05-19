@@ -61,16 +61,6 @@ h3 {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
-.Night-mode {
-  background-color: #666666;
-}
-
-.Night-mode .Business-card {
-  background-color: #666666;
-  color: #ffffff;
-  box-shadow: 0 0 11px rgba(255,255,255,.2);
-}
-
 .Contact-icon {
   vertical-align: bottom;
   margin-right: 5px;
@@ -83,6 +73,29 @@ h3 {
   margin-left: 5px;
 }
 
-.Logo-container{
+.Logo-container {
   text-align: right;
+}
+
+.Navbar {
+  height: 60px;
+  padding: 0 40px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05); 
+  -moz-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.Night-mode {
+  background-color: #666666;
+}
+
+.Night-mode .Business-card {
+  background-color: #666666;
+  color: #ffffff;
+  box-shadow: 0 0 11px rgba(255,255,255,.2);
+}
+
+.Women-Who-Code-icon {
+  height: 80%;
+  margin: 6px 0;
 }

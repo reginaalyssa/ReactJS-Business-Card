@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import BusinessCardContainer from './components/businessCard/BusinessCardContainer';
+import Navbar from './components/navbar/Navbar';
+import './App.css';
 
 
 class App extends Component {
@@ -8,7 +9,10 @@ class App extends Component {
 
   render() {
     return (
-      <BusinessCardContainer />
+      <div>
+        <Navbar />
+        <BusinessCardContainer />
+      </div>
     );
   }
 }
