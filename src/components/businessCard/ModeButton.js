@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class ModeButton extends Component {
-  render() {
-    return(
-      <button onClick={this.props.changeMode}>{this.props.isNightMode === true ? "Day Mode" : "Night Mode"}</button>
-    );
-  }
-}
+const ModeButton = ({changeMode, isNightMode}) => (
+  <button onClick={changeMode}>
+    {isNightMode === true ? "Day Mode" : "Night Mode"}
+  </button>
+);
 
 export default ModeButton;
