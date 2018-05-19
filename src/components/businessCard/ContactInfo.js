@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class ContactInfo extends Component {
-	render() {
-		return(
-			<h3><img src={this.props.logo} alt="{this.props.type} icon" className="Contact-icon" /> {this.props.value}</h3>
-		);
-	}
-}
+const ContactInfo = ({logo, value}) => (
+	<h3>
+		<img src={logo} alt="{type} icon" className="Contact-icon" /> {value}
+	</h3>
+);
 
 export default ContactInfo;
