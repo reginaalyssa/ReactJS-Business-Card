@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import logo from './../assets/logo.png';
-import emailLogo from './../assets/email.png';
-import mobileLogo from './../assets/phone-call.png';
-import githubLogo from './../assets/github.png';
+import logo from './../../assets/logo.png';
+import emailLogo from './../../assets/email.png';
+import mobileLogo from './../../assets/phone-call.png';
+import githubLogo from './../../assets/github.png';
 import ContactInfo from './ContactInfo';
 import Logo from './Logo';
 import Name from './Name';
