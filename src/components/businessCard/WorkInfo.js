@@ -1,11 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class WorkInfo extends Component {
-	render() {
-		return(
-			<h2>{this.props.position}</h2>
-		);
-	}
-}
+const WorkInfo = ({position}) => (
+	<h2>{position}</h2>
+);
 
 export default WorkInfo;
